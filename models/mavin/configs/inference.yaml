@@ -1,0 +1,10 @@
+inference:
+  checkpoint: ./checkpoints/300_epochs.pth
+
+  input_path: ./demo/BraTS-GLI-00199-000/
+  output_path: ./outputs/
+
+  patch_size: [128, 128, 128]
+  overlap: 0.5
+
+  device: cuda

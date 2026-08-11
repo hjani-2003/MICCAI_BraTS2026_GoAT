@@ -1,0 +1,9 @@
+# SwinUNETR-v2 training and inference. Torch is intentionally unpinned here:
+# install the build matching your CUDA version first, then this file.
+torch
+monai==1.5.0
+nibabel==5.3.2
+numpy
+pyyaml
+tqdm
+einops

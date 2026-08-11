@@ -1,0 +1,23 @@
+# nnUNet environment paths 
+
+nnunet_raw:          /path/to/nnunet/nnUNet_raw
+nnunet_preprocessed: /path/to/nnunet/nnUNet_preprocessed
+nnunet_results:      /path/to/nnunet/nnUNet_results
+
+# BraTS source data 
+data_dir:  /path/to/BraTS-GoAT-TrainingData-With-GroundTruth
+json_list: /path/to/folds.json
+
+# Dataset registration
+dataset_id:   1          # nnUNet dataset ID  ->  Dataset001_BraTS
+dataset_name: BraTS      # human-readable suffix
+
+# Training 
+configuration: 3d_fullres   # 3d_fullres | 3d_lowres | 3d_cascade_fullres
+folds: [0, 1, 2, 3, 4]
+trainer: nnUNetTrainer
+
+# GoAT Task 3 submission
+# Path to the GoAT validation data root (MICCAI2024-BraTS-GoAT-ValidationData/).
+# Used only by the prepare_goat and predict_goat steps.
+goat_val_dir: /path/to/BraTS-GoAT-ValidationData

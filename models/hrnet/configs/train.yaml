@@ -1,0 +1,40 @@
+data:
+  root_dir: /path/to/small_tumor_data
+  json_list: /path/to/small_tumor_data/dataset.json
+  roi: [128, 128, 128]
+  batch_size: 4
+  sw_batch_size: 8
+  infer_overlap: 0.8
+  num_workers: 18
+  fold: 0
+
+training:
+  epochs: 300
+  val_every: 10
+  lr: 1e-4
+  weight_decay: 1e-5
+  seed: 42
+
+optimizer:
+  type: AdamW
+
+scheduler:
+  type: CosineAnnealingWarmRestarts
+  t_0: 100
+  t_mult: 1
+  eta_min: 1e-9
+
+loss:
+  ce_weight: 0.7
+  dice_weight: 0.3
+  smooth_nr: 1e-5
+  smooth_dr: 1e-5
+  squared_pred: true
+
+logging:
+  log_dir: ./outputs/runs
+
+checkpoint:
+  save_dir: ./checkpoints
+  resume: null
+  periodic_save_every: 100

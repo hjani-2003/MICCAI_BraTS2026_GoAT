@@ -1,0 +1,8 @@
+model:
+  name: SmallTumorHRSeg
+  in_channels: 4
+  num_classes: 4
+  h_ch: 32
+  m_ch: 64
+  num_stages: 3
+  blocks_per_stage: 2

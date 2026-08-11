@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: >-
+  A Self-Configuring Model versus Fused Ensembles for Brain Tumor Segmentation
+  on the BraTS-GoAT Benchmark
+abstract: >-
+  Code, configurations and analysis for a BraTS 2026 GoAT Task 3 entry comparing
+  SwinUNETR-v2, MaViN and nnU-Net under supervised and self-supervised training,
+  two fusion strategies, and a two-stage inference-time post-processing pipeline.
+authors:
+  - family-names: Jani
+    given-names: Harman
+    affiliation: Ahmedabad University
+    email: harman.jani@ahduni.edu.in
+  - family-names: Raval
+    given-names: Mehul S.
+    affiliation: Ahmedabad University
+  - family-names: Bhalodiya
+    given-names: Jayendra M.
+    affiliation: Ahmedabad University
+license: MIT
+type: software
+keywords:
+  - brain tumor segmentation
+  - BraTS
+  - generalizability
+  - nnU-Net
+  - post-processing
+preferred-citation:
+  type: conference-paper
+  title: >-
+    A Self-Configuring Model versus Fused Ensembles for Brain Tumor Segmentation
+    on the BraTS-GoAT Benchmark
+  authors:
+    - family-names: Jani
+      given-names: Harman
+    - family-names: Raval
+      given-names: Mehul S.
+    - family-names: Bhalodiya
+      given-names: Jayendra M.
+  collection-title: "Brain Tumor Segmentation (BraTS) Challenge, MICCAI"
+  year: 2026

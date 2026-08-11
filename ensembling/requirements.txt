@@ -1,0 +1,11 @@
+# Fused inference and the out-of-fold weight grid search. Loads checkpoints from
+# all three architectures in one process, so it needs each of their dependencies:
+# nnunetv2 for nnU-Net's own predictor, monai for SwinUNETR-v2, and MaViN's
+# mamba-ssm
+torch
+nnunetv2
+monai==1.5.0
+nibabel
+numpy
+scipy
+pyyaml

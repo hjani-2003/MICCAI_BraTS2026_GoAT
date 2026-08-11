@@ -1,0 +1,37 @@
+data:
+  root_dir: /path/to/BraTS-GoAT-TrainingData-With-GroundTruth
+  json_list: /path/to/folds.json
+  fold: 0
+  roi: [128, 128, 128]
+  batch_size: 2
+  sw_batch_size: 2
+  infer_overlap: 0.5
+
+training:
+  epochs: 300
+  val_every: 10
+  lr: 1e-4
+  weight_decay: 1e-5
+  seed: 42
+
+optimizer:
+  type: AdamW
+
+scheduler:
+  type: CosineAnnealingWarmRestarts
+  t_0: 100
+  t_mult: 1
+  eta_min: 5e-9
+
+loss:
+  dice_weight: 1.0
+  smooth_nr: 1e-5
+  smooth_dr: 1e-5
+  squared_pred: true
+
+logging:
+  log_dir: ./outputs/runs
+
+checkpoint:
+  save_dir: ./checkpoints
+  resume: null

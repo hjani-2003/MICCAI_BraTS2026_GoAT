@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# Tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Experiment outputs
+results_mamba_vision_unet/
+outputs/*
+
+# Datasets
+data/*
+
+# Checkpoints
+checkpoints/*
