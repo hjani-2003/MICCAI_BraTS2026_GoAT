@@ -5,6 +5,8 @@ Code for our BraTS 2026 GoAT (Generalized and Automated Tumor Segmentation) Chal
 
 Harman Jani, Mehul S. Raval, Jayendra M. Bhalodiya — Ahmedabad University, India
 
+Paper: [OpenReview](https://openreview.net/forum?id=xcByIqAUwJ)
+
 ## What this work found
 
 We trained three architecturally distinct networks on all five GoAT sub-tasks (adult
@@ -117,6 +119,8 @@ H100 NVL.
 
 ## Citation
 
+Paper: [OpenReview](https://openreview.net/forum?id=xcByIqAUwJ)
+
 ```bibtex
 @inproceedings{jani2026goat,
   title     = {A Self-Configuring Model versus Fused Ensembles for Brain Tumor
@@ -128,6 +132,8 @@ H100 NVL.
 ```
 
 MaViN has its own paper; if you use `models/mavin/`, cite that as well.
+
+See [REFERENCES.md](REFERENCES.md) for the full reference list from the paper.
 
 ## License
 
